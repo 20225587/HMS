@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Assuming your CSS file is in the 'css' folder -->
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Welcome to Hospital Management System</h2>
+                <hr>
+            </div>
+        </div>
+        
+        <!-- Admin Dashboard -->
+        <div id="admin-dashboard" style="display: none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Pending Appointments</h5>
+                            <p class="card-text">View and manage pending appointments.</p>
+                            <a href="admin/appointments.html" class="btn btn-primary">Go to Appointments</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Doctors on Session</h5>
+                            <p class="card-text">Track doctors currently on session in different departments.</p>
+                            <a href="admin/doctors.html" class="btn btn-primary">Go to Doctors</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Medical Reports</h5>
+                            <p class="card-text">Access and manage medical reports of patients.</p>
+                            <a href="admin/medical_reports.html" class="btn btn-primary">Go to Medical Reports</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Patients Details</h5>
+                            <p class="card-text">Manage details of registered patients.</p>
+                            <a href="admin/patients.html" class="btn btn-primary">Go to Patients</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Hospital Analytics</h5>
+                            <p class="card-text">View analytics related to patients, diseases, and employees.</p>
+                            <a href="admin/analytics.html" class="btn btn-primary">Go to Analytics</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Employees</h5>
+                            <p class="card-text">Manage employees' work status and details.</p>
+                            <a href="admin/employees.html" class="btn btn-primary">Go to Employees</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Disease Diagnose</h5>
+                            <p class="card-text">View and manage disease diagnoses.</p>
+                            <a href="admin/disease_diagnose.html" class="btn btn-primary">Go to Disease Diagnose</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Dashboard -->
+        <div id="user-dashboard" style="display: none;">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Register Patient</h5>
+                            <p class="card-text">Register a new patient in the hospital system.</p>
+                            <a href="user/register_patient.html" class="btn btn-primary">Register Patient</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Book Appointment</h5>
+                            <p class="card-text">Book an appointment with a doctor.</p>
+                            <a href="user/book_appointment.html" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Cancel Appointment</h5>
+                            <p class="card-text">Cancel a previously booked appointment.</p>
+                            <a href="user/cancel_appointment.html" class="btn btn-danger">Cancel Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Medical Reports</h5>
+                            <p class="card-text">View medical reports of patients.</p>
+                            <a href="user/medical_reports.html" class="btn btn-primary">Go to Medical Reports</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Patient History</h5>
+                            <p class="card-text">View history of visits and treatments.</p>
+                            <a href="user/patient_history.html" class="btn btn-primary">Go to Patient History</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Billing</h5>
+                            <p class="card-text">View billing information.</p>
+                            <a href="user/billing.html" class="btn btn-primary">Go to Billing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Payments</h5>
+                            <p class="card-text">View and manage payments.</p>
+                            <a href="user/payments.html" class="btn btn-primary">Go to Payments</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Hospital Analytics</h5>
+                            <p class="card-text">View analytics related to patients and diseases.</p>
+                            <a href="user/analytics.html" class="btn btn-primary">Go to Analytics</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script> <!-- Assuming your JavaScript file is in the 'js' folder -->
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
