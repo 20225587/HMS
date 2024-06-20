@@ -1,5 +1,3 @@
-// models/user.js
-
 const db = require("../db");
 
 const User = {
@@ -27,6 +25,26 @@ const User = {
           resolve(null);
         }
       });
+    });
+  },
+  findByEmail: (email) => {
+    // Added method
+    return new Promise((resolve, reject) => {
+      db.query(
+        "SELECT * FROM users WHERE email = ?",
+        [email],
+        (error, results) => {
+          if (error) {
+            reject(error);
+            return;
+          }
+          if (results.length) {
+            resolve(results[0]);
+          } else {
+            resolve(null);
+          }
+        }
+      );
     });
   },
   create: (newUser) => {

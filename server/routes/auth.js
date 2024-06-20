@@ -1,7 +1,7 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const User = require("./models/User");
+const User = require("../models/user"); // Correct import path
 
 const router = express.Router();
 const JWT_SECRET = "your_jwt_secret_key"; // Replace with a more secure key in production
@@ -10,7 +10,7 @@ const JWT_SECRET = "your_jwt_secret_key"; // Replace with a more secure key in p
 router.post("/signup", async (req, res) => {
   const { email, password } = req.body;
   try {
-    const user = await User.create(email, password, "user");
+    const user = await User.create({ email, password, role: "user" }); // Updated to pass an object
     res.status(201).json({ message: "User created successfully" });
   } catch (error) {
     res.status(500).json({ message: "Error creating user", error });
